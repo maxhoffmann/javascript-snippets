@@ -6,7 +6,7 @@
 
 })(window, document);
 ]]></content>
-	<tabTrigger>modulewrapper</tabTrigger>
+	<tabTrigger>module</tabTrigger>
 	<scope>source.js</scope>
-	<description>js module wrapper</description>
+	<description>JavaScript module</description>
 </snippet>
