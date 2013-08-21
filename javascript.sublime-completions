@@ -25,10 +25,10 @@
 		{ "trigger": "Array.unshift", "contents": "unshift(${1:element1, element2...})" },
 
 		// document functions
-		{ "trigger": "document.getElementById", "contents": "getElementById('${1:id}')" },
-		{ "trigger": "document.getElementsByClassName", "contents": "getElementsByClassName('${2:class1 class2...}')" },
-		{ "trigger": "document.querySelector", "contents": "querySelector('${1:selector}')" },
-		{ "trigger": "document.querySelectorAll", "contents": "querySelectorAll('${1:selector1, selector2...}')" },
+		{ "trigger": "document.getElementById", "contents": "document.getElementById('${1:id}')" },
+		{ "trigger": "document.getElementsByClassName", "contents": "document.getElementsByClassName('${2:class1 class2...}')" },
+		{ "trigger": "document.querySelector", "contents": "document.querySelector('${1:selector}')" },
+		{ "trigger": "document.querySelectorAll", "contents": "document.querySelectorAll('${1:selector1, selector2...}')" },
 
 		// Function functions
 		{ "trigger": "Function.apply", "contents": "apply('${1:this}${2:, [argsArray]}')" },
@@ -67,6 +67,11 @@
 		{ "trigger": "throwe", "contents": "throw new Error('${1:exception}');" },
 		{ "trigger": "try", "contents": "try {\n\t$0\n} catch (e) {\n\t\n}" },
 		{ "trigger": "var", "contents": "var ${1:variable} = ${2:value}" },
+
+		// Element functions
+		{ "trigger": "addEventListener", "contents": "addEventListener('${1:event}', ${2:handler}, false)" },
+		{ "trigger": "removeEventListener", "contents": "removeEventListener('${1:event}', ${2:handler})" },
+		{ "trigger": "preventDefault", "contents": "preventDefault()" },
 
 		// types
 		"Array",
