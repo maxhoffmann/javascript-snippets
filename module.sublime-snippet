@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+${1:module} = (function () {
+	$0
+
+	return this;
+}).call(${1:module} || {});
+]]></content>
+	<tabTrigger>module</tabTrigger>
+	<scope>source.js</scope>
+	<description>JavaScript module</description>
+</snippet>
