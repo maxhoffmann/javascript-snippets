@@ -8,7 +8,7 @@
 
 	$0
 
-}).call(window);
+})();
 ]]></content>
 	<tabTrigger>wrapper</tabTrigger>
 	<scope>source.js</scope>
