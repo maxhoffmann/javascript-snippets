@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-${1:module} = (function () {
+${1:module} = (function() {
 	$0
 
 	return this;

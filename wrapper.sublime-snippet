@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-;(function (doc, undefined) {
+;(function(doc, undefined) {
 
 	'use strict';
 
