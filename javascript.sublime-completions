@@ -5,13 +5,13 @@
 
 		// Array functions
 		{ "trigger": "Array.concat", "contents": "concat('${1:value1, value2...}')" },
-		{ "trigger": "Array.every", "contents": "every(${1:callback}${2:, [this]})" },
-		{ "trigger": "Array.filter", "contents": "filter(${1:callback}${2:, [this]})" },
-		{ "trigger": "Array.forEach", "contents": "forEach(${1:callback}${2:, [this]})" },
+		{ "trigger": "Array.every", "contents": "every(${0:callback}${1:, this})" },
+		{ "trigger": "Array.filter", "contents": "filter(${0:callback}${1:, this})" },
+		{ "trigger": "Array.forEach", "contents": "forEach(${0:callback}${1:, this})" },
 		{ "trigger": "Array.indexOf", "contents": "indexOf(${1:searchElement}${2:, [fromIndex]})" },
 		{ "trigger": "Array.join", "contents": "join(${1:seperator})" },
 		{ "trigger": "Array.lastIndexOf", "contents": "lastIndexOf(${1:searchElement}${2:, [fromIndex]})" },
-		{ "trigger": "Array.map", "contents": "map(${1:callback}${2:, [this]})" },
+		{ "trigger": "Array.map", "contents": "map(${0:callback}${1:, this})" },
 		{ "trigger": "Array.pop", "contents": "pop()" },
 		{ "trigger": "Array.push", "contents": "push(${1:element1, element2})" },
 		{ "trigger": "Array.reduce", "contents": "reduce(${1:callback(prevVal, currentVal, index, array)}${2:, [initialValue]})" },
@@ -19,7 +19,7 @@
 		{ "trigger": "Array.reverse", "contents": "reverse()" },
 		{ "trigger": "Array.shift", "contents": "shift()" },
 		{ "trigger": "Array.slice", "contents": "slice(${1:begin}${2:, end})" },
-		{ "trigger": "Array.some", "contents": "some(${1:callback)}${2:, [this]})" },
+		{ "trigger": "Array.some", "contents": "some(${0:callback)}${1:, this})" },
 		{ "trigger": "Array.sort", "contents": "sort(${1:compareFunction(item, nextItem)})" },
 		{ "trigger": "Array.splice", "contents": "splice(${1:index}${2:, [howMany]}${3:, [elementAdded1, elementAdded2...]})" },
 		{ "trigger": "Array.unshift", "contents": "unshift(${1:element1, element2...})" },
@@ -94,6 +94,7 @@
 		"document",
 		"window",
 		"length",
+		"prototype",
 
 		// special operators
 		"instanceof",
