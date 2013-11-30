@@ -1,13 +1,9 @@
 <snippet>
-	<content><![CDATA[
-function ${1:Class}() {
-	$0
-}
-
-${1:Class}.prototype = (function() {
-
-	return this;
-}).call({});
+	<content><![CDATA[${1:Class} = (function() {
+	function ${1:Class}() {
+		$0
+	}
+}());
 ]]></content>
 	<tabTrigger>class</tabTrigger>
 	<scope>source.js</scope>
