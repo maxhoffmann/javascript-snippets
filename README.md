@@ -1,4 +1,4 @@
 javascript-snippets
 ===================
 
-Sublime Text 2 Snippets for JavaScript
+JavaScript completions for Sublime Text
