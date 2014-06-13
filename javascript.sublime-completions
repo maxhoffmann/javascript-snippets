@@ -25,6 +25,7 @@
 		{ "trigger": "Array.unshift", "contents": "unshift(${1:element1, element2...})" },
 
 		// document functions
+		{ "trigger": "document.createElement", "contents": "document.createElement('${1:tag}')" },
 		{ "trigger": "document.getElementById", "contents": "document.getElementById('${1:id}')" },
 		{ "trigger": "document.getElementsByClassName", "contents": "document.getElementsByClassName('${2:class1 class2...}')" },
 		{ "trigger": "document.querySelector", "contents": "document.querySelector('${1:selector}')" },
