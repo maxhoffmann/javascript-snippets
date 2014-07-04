@@ -107,5 +107,9 @@
 		{ "trigger": "require", "contents": "require('$1')" },
 		{ "trigger": "module.exports", "contents": "module.exports = " },
 
+		// debugging
+		"debugger;",
+		{ "trigger": "console.log", "contents": "console.log($1);"}
+
 	]
 }
