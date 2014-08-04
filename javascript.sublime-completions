@@ -24,13 +24,6 @@
 		{ "trigger": "Array.splice", "contents": "splice(${1:index}${2:, [howMany]}${3:, [elementAdded1, elementAdded2...]})" },
 		{ "trigger": "Array.unshift", "contents": "unshift(${1:element1, element2...})" },
 
-		// document functions
-		{ "trigger": "document.createElement", "contents": "document.createElement('${1:tag}')" },
-		{ "trigger": "document.getElementById", "contents": "document.getElementById('${1:id}')" },
-		{ "trigger": "document.getElementsByClassName", "contents": "document.getElementsByClassName('${2:class1 class2...}')" },
-		{ "trigger": "document.querySelector", "contents": "document.querySelector('${1:selector}')" },
-		{ "trigger": "document.querySelectorAll", "contents": "document.querySelectorAll('${1:selector1, selector2...}')" },
-
 		// Function functions
 		{ "trigger": "Function.apply", "contents": "apply('${1:this}${2:, [argsArray]}')" },
 		{ "trigger": "Function.bind", "contents": "bind('${1:this}${2:, [arg1, arg2...]}')" },
@@ -71,9 +64,17 @@
 		{ "trigger": "setTimeout", "contents": "setTimeout(function() {\n\t$0\n}$1);" },
 
 		// Element functions
+		{ "trigger": "createElement", "contents": "createElement('${1:tag}')" },
+		{ "trigger": "getElementById", "contents": "getElementById('${1:id}')" },
+		{ "trigger": "getElementsByClassName", "contents": "getElementsByClassName('${2:class1 class2...}')" },
+		{ "trigger": "querySelector", "contents": "querySelector('${1:selector}')" },
+		{ "trigger": "querySelectorAll", "contents": "querySelectorAll('${1:selector1, selector2...}')" },
 		{ "trigger": "addEventListener", "contents": "addEventListener('${1:event}', ${2:handler}, false)" },
 		{ "trigger": "removeEventListener", "contents": "removeEventListener('${1:event}', ${2:handler})" },
+
+		// Events
 		{ "trigger": "preventDefault", "contents": "preventDefault()" },
+		{ "trigger": "stopPropagation", "contents": "stopPropagation()" },
 
 		// types
 		"Array",
