@@ -106,6 +106,7 @@
     // Common.js
     "module",
     { "trigger": "require", "contents": "require('$1')" },
+    { "trigger": "var require", "contents": "var ${1:module} = require('${2:module}')" },
     { "trigger": "module.exports", "contents": "module.exports = " },
 
     // debugging
