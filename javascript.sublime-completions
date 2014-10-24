@@ -1,116 +1,119 @@
 {
-	"scope": "source.js",
+  "scope": "source.js",
 
-	"completions": [
+  "completions": [
 
-		// Array functions
-		{ "trigger": "Array.concat", "contents": "concat('${1:value1, value2...}')" },
-		{ "trigger": "Array.every", "contents": "every(${0:callback}${1:, this})" },
-		{ "trigger": "Array.filter", "contents": "filter(${0:callback}${1:, this})" },
-		{ "trigger": "Array.forEach", "contents": "forEach(${0:callback}${1:, this})" },
-		{ "trigger": "Array.indexOf", "contents": "indexOf(${1:searchElement}${2:, [fromIndex]})" },
-		{ "trigger": "Array.join", "contents": "join(${1:seperator})" },
-		{ "trigger": "Array.lastIndexOf", "contents": "lastIndexOf(${1:searchElement}${2:, [fromIndex]})" },
-		{ "trigger": "Array.map", "contents": "map(${0:callback}${1:, this})" },
-		{ "trigger": "Array.pop", "contents": "pop()" },
-		{ "trigger": "Array.push", "contents": "push(${1:element1, element2})" },
-		{ "trigger": "Array.reduce", "contents": "reduce(${1:callback(prevVal, currentVal, index, array)}${2:, [initialValue]})" },
-		{ "trigger": "Array.reduceRight", "contents": "reduceRight(${1:callback(prevVal, currentVal, index, array)}${2:, [initialValue]})" },
-		{ "trigger": "Array.reverse", "contents": "reverse()" },
-		{ "trigger": "Array.shift", "contents": "shift()" },
-		{ "trigger": "Array.slice", "contents": "slice(${1:begin}${2:, end})" },
-		{ "trigger": "Array.some", "contents": "some(${0:callback)}${1:, this})" },
-		{ "trigger": "Array.sort", "contents": "sort(${1:compareFunction(item, nextItem)})" },
-		{ "trigger": "Array.splice", "contents": "splice(${1:index}${2:, [howMany]}${3:, [elementAdded1, elementAdded2...]})" },
-		{ "trigger": "Array.unshift", "contents": "unshift(${1:element1, element2...})" },
+    // Array functions
+    { "trigger": "Array.concat", "contents": "concat('${1:value1, value2...}')" },
+    { "trigger": "Array.every", "contents": "every(${0:callback}${1:, this})" },
+    { "trigger": "Array.filter", "contents": "filter(${0:callback}${1:, this})" },
+    { "trigger": "Array.forEach", "contents": "forEach(${0:callback}${1:, this})" },
+    { "trigger": "Array.indexOf", "contents": "indexOf(${1:searchElement}${2:, [fromIndex]})" },
+    { "trigger": "Array.join", "contents": "join(${1:seperator})" },
+    { "trigger": "Array.lastIndexOf", "contents": "lastIndexOf(${1:searchElement}${2:, [fromIndex]})" },
+    { "trigger": "Array.map", "contents": "map(${0:callback}${1:, this})" },
+    { "trigger": "Array.pop", "contents": "pop()" },
+    { "trigger": "Array.push", "contents": "push(${1:element1, element2})" },
+    { "trigger": "Array.reduce", "contents": "reduce(${1:callback(prevVal, currentVal, index, array)}${2:, [initialValue]})" },
+    { "trigger": "Array.reduceRight", "contents": "reduceRight(${1:callback(prevVal, currentVal, index, array)}${2:, [initialValue]})" },
+    { "trigger": "Array.reverse", "contents": "reverse()" },
+    { "trigger": "Array.shift", "contents": "shift()" },
+    { "trigger": "Array.slice", "contents": "slice(${1:begin}${2:, end})" },
+    { "trigger": "Array.some", "contents": "some(${0:callback)}${1:, this})" },
+    { "trigger": "Array.sort", "contents": "sort(${1:compareFunction(item, nextItem)})" },
+    { "trigger": "Array.splice", "contents": "splice(${1:index}${2:, [howMany]}${3:, [elementAdded1, elementAdded2...]})" },
+    { "trigger": "Array.unshift", "contents": "unshift(${1:element1, element2...})" },
 
-		// Function functions
-		{ "trigger": "Function.apply", "contents": "apply('${1:this}${2:, [argsArray]}')" },
-		{ "trigger": "Function.bind", "contents": "bind('${1:this}${2:, [arg1, arg2...]}')" },
-		{ "trigger": "Function.call", "contents": "call('${1:this}${2:, [arg1, arg2...]}')" },
+    // Function functions
+    { "trigger": "Function.apply", "contents": "apply('${1:this}${2:, [argsArray]}')" },
+    { "trigger": "Function.bind", "contents": "bind('${1:this}${2:, [arg1, arg2...]}')" },
+    { "trigger": "Function.call", "contents": "call('${1:this}${2:, [arg1, arg2...]}')" },
 
-		// Object functions
-		{ "trigger": "Object.create", "contents": "Object.create(${1:prototype}${2:, [propertiesObject]})" },
-		{ "trigger": "Object.defineProperty", "contents": "Object.defineProperty(${1:obj}, ${2:property}, ${3:descriptorObj})" },
-		{ "trigger": "Object.defineProperties", "contents": "Object.defineProperties(${1:obj}, ${2:propertiesObj})" },
-		{ "trigger": "Object.freeze", "contents": "Object.freeze(${1:obj})" },
-		{ "trigger": "Object.getOwnPropertyDescriptor", "contents": "Object.getOwnPropertyDescriptor(${1:obj}, ${2:property})" },
-		{ "trigger": "Object.getOwnPropertyNames", "contents": "Object.getOwnPropertyNames(${1:obj})" },
-		{ "trigger": "Object.getPrototypeOf", "contents": "Object.getPrototypeOf(${1:obj})" },
-		{ "trigger": "Object.hasOwnProperty", "contents": "hasOwnProperty(${1:property})" },
-		{ "trigger": "Object.isExtensible", "contents": "Object.isExtensible(${1:obj})" },
-		{ "trigger": "Object.isFrozen", "contents": "Object.isFrozen(${1:obj})" },
-		{ "trigger": "Object.isPrototypeOf", "contents": "isPrototypeOf(${1:obj})" },
-		{ "trigger": "Object.isSealed", "contents": "Object.isSealed(${1:obj})" },
-		{ "trigger": "Object.keys", "contents": "Object.keys(${1:obj})" },
-		{ "trigger": "Object.preventExtensions", "contents": "Object.preventExtensions(${1:obj})" },
-		{ "trigger": "Object.propertyIsEnumerable", "contents": "propertyIsEnumerable(${1:property})" },
-		{ "trigger": "Object.seal", "contents": "Object.seal(${1:obj})" },
-		{ "trigger": "Object.toString", "contents": "toString()" },
-		{ "trigger": "Object.valueOf", "contents": "valueOf()" },
+    // Object functions
+    { "trigger": "Object.create", "contents": "Object.create(${1:prototype}${2:, [propertiesObject]})" },
+    { "trigger": "Object.defineProperty", "contents": "Object.defineProperty(${1:obj}, ${2:property}, ${3:descriptorObj})" },
+    { "trigger": "Object.defineProperties", "contents": "Object.defineProperties(${1:obj}, ${2:propertiesObj})" },
+    { "trigger": "Object.freeze", "contents": "Object.freeze(${1:obj})" },
+    { "trigger": "Object.getOwnPropertyDescriptor", "contents": "Object.getOwnPropertyDescriptor(${1:obj}, ${2:property})" },
+    { "trigger": "Object.getOwnPropertyNames", "contents": "Object.getOwnPropertyNames(${1:obj})" },
+    { "trigger": "Object.getPrototypeOf", "contents": "Object.getPrototypeOf(${1:obj})" },
+    { "trigger": "Object.hasOwnProperty", "contents": "hasOwnProperty(${1:property})" },
+    { "trigger": "Object.isExtensible", "contents": "Object.isExtensible(${1:obj})" },
+    { "trigger": "Object.isFrozen", "contents": "Object.isFrozen(${1:obj})" },
+    { "trigger": "Object.isPrototypeOf", "contents": "isPrototypeOf(${1:obj})" },
+    { "trigger": "Object.isSealed", "contents": "Object.isSealed(${1:obj})" },
+    { "trigger": "Object.keys", "contents": "Object.keys(${1:obj})" },
+    { "trigger": "Object.preventExtensions", "contents": "Object.preventExtensions(${1:obj})" },
+    { "trigger": "Object.propertyIsEnumerable", "contents": "propertyIsEnumerable(${1:property})" },
+    { "trigger": "Object.seal", "contents": "Object.seal(${1:obj})" },
+    { "trigger": "Object.toString", "contents": "toString()" },
+    { "trigger": "Object.valueOf", "contents": "valueOf()" },
 
-		// statements
-		{ "trigger": "for", "contents": "for (${1:var }${2:i} = 0, ${3:length} = ${4:array.length}; ${2:i} < ${3:length}; ${2:i}++) {\n\t$0\n}" },
-		{ "trigger": "function", "contents": "function$1($2) {\n\t$0\n}" },
-		{ "trigger": "if", "contents": "if (${1:statement}) {\n\t$0\n}" },
-		{ "trigger": "ret0", "contents": "return" },
-		{ "trigger": "ret1", "contents": "return true" },
-		{ "trigger": "reto", "contents": "return {\n\t$0\n}" },
-		{ "trigger": "return", "contents": "return ${1:value}" },
-		{ "trigger": "throw", "contents": "throw ${1:exception}" },
-		{ "trigger": "throwe", "contents": "throw new Error('${1:exception}')" },
-		{ "trigger": "try", "contents": "try {\n\t$0\n} catch (e) {\n\t\n}" },
-		{ "trigger": "var", "contents": "var ${1:variable} = ${2:value}" },
-		{ "trigger": "setTimeout", "contents": "setTimeout(function() {\n\t$0\n}$1)" },
+    // statements
+    { "trigger": "for", "contents": "for (${1:var }${2:i} = 0, ${3:length} = ${4:array.length}; ${2:i} < ${3:length}; ${2:i}++) {\n\t$0\n}" },
+    { "trigger": "function", "contents": "function$1($2) {\n\t$0\n}" },
+    { "trigger": "if", "contents": "if (${1:statement}) {\n\t$0\n}" },
+    { "trigger": "ret0", "contents": "return" },
+    { "trigger": "ret1", "contents": "return true" },
+    { "trigger": "reto", "contents": "return {\n\t$0\n}" },
+    { "trigger": "return", "contents": "return ${1:value}" },
+    { "trigger": "throw", "contents": "throw ${1:exception}" },
+    { "trigger": "throwe", "contents": "throw new Error('${1:exception}')" },
+    { "trigger": "try", "contents": "try {\n\t$0\n} catch (e) {\n\t\n}" },
+    { "trigger": "var", "contents": "var ${1:variable} = ${2:value}" },
+    { "trigger": "setTimeout", "contents": "setTimeout(function() {\n\t$0\n}$1)" },
 
-		// Element functions
-		{ "trigger": "createElement", "contents": "createElement('${1:tag}')" },
-		{ "trigger": "getElementById", "contents": "getElementById('${1:id}')" },
-		{ "trigger": "getElementsByClassName", "contents": "getElementsByClassName('${2:class1 class2...}')" },
-		{ "trigger": "querySelector", "contents": "querySelector('${1:selector}')" },
-		{ "trigger": "querySelectorAll", "contents": "querySelectorAll('${1:selector1, selector2...}')" },
-		{ "trigger": "addEventListener", "contents": "addEventListener('${1:event}', ${2:handler}, false)" },
-		{ "trigger": "removeEventListener", "contents": "removeEventListener('${1:event}', ${2:handler})" },
+    // Element functions
+    { "trigger": "createElement", "contents": "createElement('${1:tag}')" },
+    { "trigger": "getElementById", "contents": "getElementById('${1:id}')" },
+    { "trigger": "getElementsByClassName", "contents": "getElementsByClassName('${2:class1 class2...}')" },
+    { "trigger": "querySelector", "contents": "querySelector('${1:selector}')" },
+    { "trigger": "querySelectorAll", "contents": "querySelectorAll('${1:selector1, selector2...}')" },
+    { "trigger": "addEventListener", "contents": "addEventListener('${1:event}', ${2:handler}, false)" },
+    { "trigger": "removeEventListener", "contents": "removeEventListener('${1:event}', ${2:handler})" },
 
-		// Events
-		{ "trigger": "preventDefault", "contents": "preventDefault()" },
-		{ "trigger": "stopPropagation", "contents": "stopPropagation()" },
+    // Events
+    { "trigger": "preventDefault", "contents": "preventDefault()" },
+    { "trigger": "stopPropagation", "contents": "stopPropagation()" },
 
-		// types
-		"Array",
-		"Boolean",
-		"Date",
-		"Element",
-		"Function",
-		"JSON",
-		"Math",
-		"Nan",
-		"NodeList",
-		"Number",
-		"null",
-		"Object",
-		"RegExp",
-		"String",
-		"undefined",
+    // types
+    "Array",
+    "Boolean",
+    "Date",
+    "Element",
+    "Function",
+    "JSON",
+    "Math",
+    "Nan",
+    "NodeList",
+    "Number",
+    "null",
+    "Object",
+    "RegExp",
+    "String",
+    "undefined",
 
-		// variables
-		"document",
-		"window",
-		"length",
-		"prototype",
+    // variables
+    "document",
+    "window",
+    "length",
+    "prototype",
 
-		// special operators
-		"instanceof",
-		"typeof",
+    // special operators
+    "instanceof",
+    "typeof",
 
-		// Common.js
-		"module",
-		{ "trigger": "require", "contents": "require('$1')" },
-		{ "trigger": "module.exports", "contents": "module.exports = " },
+    // Common.js
+    "module",
+    { "trigger": "require", "contents": "require('$1')" },
+    { "trigger": "module.exports", "contents": "module.exports = " },
 
-		// debugging
-		"debugger;",
-		{ "trigger": "console.log", "contents": "console.log($1)"}
+    // debugging
+    "debugger;",
+    { "trigger": "console.log", "contents": "console.log($1)"},
 
-	]
+    // strict
+    { "trigger": "use strict", "contents": "\"use strict\";"}
+
+  ]
 }
