@@ -105,11 +105,16 @@
     "typeof",
 
     // Common.js
-    "module",
     { "trigger": "require", "contents": "require('$1');" },
     { "trigger": "var require", "contents": "var ${1:module} = require('${2:module}');" },
     { "trigger": "const require", "contents": "const ${1:module} = require('${2:module}');" },
     { "trigger": "module.exports", "contents": "module.exports = $1;" },
+
+    // ES2015 modules
+    { "trigger": "import", "contents": "import $1 from '$2';" },
+    { "trigger": "import (named)", "contents": "import { $1 } from '$2';" },
+    { "trigger": "export", "contents": "export default ${1:declaration}" },
+    { "trigger": "export (named)", "contents": "export ${1:declaration}" },
 
     // debugging
     "debugger;",
